@@ -1,0 +1,6 @@
+﻿namespace E314.Cli;
+
+public partial interface IEmail
+{
+	string Value();
+}

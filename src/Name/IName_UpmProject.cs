@@ -1,0 +1,9 @@
+namespace E314.Cli;
+
+public partial interface IName
+{
+	public sealed class UpmProject(IName name) : IName
+	{
+		public string Value() => new KebabCase(new E314(name)).Value();
+	}
+}
